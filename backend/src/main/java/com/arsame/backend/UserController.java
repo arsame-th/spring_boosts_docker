@@ -31,7 +31,7 @@ public class UserController {
     }   
 
     @PostMapping("/")
-    public User GetUser(@PathVariable User user) {
+    public User GetUser(@RequestBody User user) {
         return userRepository.save(user);
     }
 
